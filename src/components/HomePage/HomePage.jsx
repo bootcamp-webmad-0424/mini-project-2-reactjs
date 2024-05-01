@@ -1,6 +1,7 @@
 import Footer from "../Footer/Footer"
 import Navbar from "../Navbar/Navbar"
 import Sidebar from "../Sidebar/Sidebar"
+import StudentsList from "../StudentsList/StudentsList"
 
 import './HomePage.css'
 
@@ -10,7 +11,7 @@ const HomePage = () => {
             <Navbar />
             <main className="main-content">
                 <Sidebar />
-                <Footer />
+                <StudentsList />
             </main>
         </div>
     )
