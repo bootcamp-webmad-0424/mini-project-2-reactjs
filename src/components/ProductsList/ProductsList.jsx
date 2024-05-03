@@ -15,8 +15,6 @@ const ProductsList = () => {
 
     return (
         <div className="ProductsList">
-            <h1>Productos</h1>
-            <hr />
 
             <table>
 
@@ -26,6 +24,7 @@ const ProductsList = () => {
                         <th>Marca</th>
                         <th>Precio</th>
                         <th>Puntuación</th>
+                        <th>Detalles</th>
                         <th>Eliminar</th>
                     </tr>
                 </thead>

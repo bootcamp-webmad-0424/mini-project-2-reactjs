@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const ProductRow = ({ id, title, brand, price, rating, handleProductRemove }) => {
 
     return (
@@ -7,6 +9,11 @@ const ProductRow = ({ id, title, brand, price, rating, handleProductRemove }) =>
             <td>{price}</td>
             <td>
                 {rating > 4.5 ? '🟢' : '🔴'} {rating}
+            </td>
+            <td>
+                <Link to={`/productos/${id}`}>
+                    Ver
+                </Link>
             </td>
             <td onClick={() => handleProductRemove(id)}>❌</td>
         </tr>

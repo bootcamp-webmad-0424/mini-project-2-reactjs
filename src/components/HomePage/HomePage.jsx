@@ -1,18 +1,13 @@
-import Navbar from "../Navbar/Navbar"
-import Sidebar from "../Sidebar/Sidebar"
-import ProductsList from "../ProductsList/ProductsList"
-
+import { Link } from 'react-router-dom'
 import './HomePage.css'
 
 const HomePage = () => {
     return (
         <div className="HomePage">
-            <Navbar />
-            <main className="main-content">
-                <Sidebar />
-                <ProductsList />
-            </main>
-        </div>
+            <h1>Bienvend@ a la weg</h1>
+            <hr />
+            <Link to={'/productos/listado'} >Ver productos</Link>
+        </div >
     )
 }
 
