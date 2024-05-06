@@ -1,17 +1,8 @@
-import { useState } from "react"
 import ProductRow from "../ProductRow/ProductRow"
-import productsData from './../../data/products.json'
 
 import './ProductsList.css'
 
-const ProductsList = () => {
-
-    const [products, setProducts] = useState(productsData)
-
-    const handleProductRemove = (productIdToDelete) => {
-        const productsAfterDeletion = products.filter(eachProduct => eachProduct.id != productIdToDelete)
-        setProducts(productsAfterDeletion)
-    }
+const ProductsList = ({ products, handleProductRemove }) => {
 
     return (
         <div className="ProductsList">
